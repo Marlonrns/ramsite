@@ -4,18 +4,14 @@
   "description": "",
   "main": "index.js",
   "type": "module",
-  "scripts": {
-    "start": "node src/generate.js && npx webpack serve --config webpack.config.cjs --mode development",
-    "build": "node src/generate.js && npx webpack --config webpack.config.cjs --mode production"
-  },
+ "scripts": {
+  "start": "npx webpack serve --config webpack.config.cjs --mode development",
+  "build": "npx webpack --config webpack.config.cjs --mode production"
+},
   "devDependencies": {
     "axios": "^1.7.9",
     "css-loader": "^7.1.2",
-    "ejs": "^3.1.10",
-    "fs-extra": "^11.3.0",
     "html-webpack-plugin": "^5.6.3",
-    "sass": "^1.84.0",
-    "sass-loader": "^16.0.4",
     "style-loader": "^4.0.0",
     "webpack": "^5.98.0",
     "webpack-cli": "^5.0.1",
